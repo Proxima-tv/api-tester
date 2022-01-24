@@ -1,0 +1,17 @@
+{
+  "name": "proxima-api-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "*"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
