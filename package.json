@@ -12,6 +12,7 @@
     "electron": "*"
   },
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "request": "^2.88.2"
   }
 }

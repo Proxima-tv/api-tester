@@ -1,6 +1,5 @@
-const request = require("request");
+const request = require('request');
 const crypto = require('crypto');
-const { ipcRenderer, ipcMain } = require("electron");
 
 const algorithm = 'aes-256-ctr';
 const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
@@ -21,6 +20,6 @@ request.get({
     uri: "http://localhost:3000/user/login",
     json: true,
     body: encrypt(JSON.stringify( { username:"test", password:"test" } )) 
-}).on('response', (response) => {
-    console.log(data);
+}, (err,res,body) => {
+    console.log(body);
 });
