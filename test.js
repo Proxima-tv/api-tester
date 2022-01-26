@@ -22,7 +22,7 @@ const decrypt = (data) => {
     const decrpyted = Buffer.concat([decipher.update(Buffer.from(data['content'], 'hex')), decipher.final()]);
     return decrpyted.toString();
 }
-/**
+
 request.get({
     uri: "http://localhost:3000/user/login",
     json: true,
@@ -31,21 +31,21 @@ request.get({
     console.log(body);
     console.log(decrypt(body));
 });
-*/
 
-request.post({
+
+/*request.post({
     uri: "http://localhost:3000/user/register",
     json:true,
     body: {
-        username: "steev", 
-        password:"25565", 
-        name:"maurice", 
-        lastname:"fletgen", 
-        email:"mauricefl@outlook.de",
-        profile_likes: 0,
-        profile_pic: "test",
-        profile_id: 0989
+        "profile_likes":0,
+        "profile_id":20,
+        "username":"steev",
+        "password":"25565",
+        "name":"Maurice",
+        "lastname":"fletgen",
+        "email":"mauricefl@outlook.de",
+        "profile_pic":"test"
     }
 }, (err,res,body) => {
-    console.log(decrypt(body));
-});
+    console.log(body);
+});*/
